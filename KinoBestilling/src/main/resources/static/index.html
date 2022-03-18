@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div>
+    <h1>Bestilling av kinobiletter</h1>
+    <div>
+        <table>
+            <tr>
+                <td>Velg Film:</td>
+                <td>
+                    <select name="roller" id="velgFilm">
+                        <option value="" disabled selected hidden>Velg film her</option>
+                        <option value="Inception">Inception</option>
+                        <option value="Troy">Troy</option>
+                        <option value="Runner">Runner</option>
+                    </select>
+                </td>
+                <td id="returnFilm"></td>
+            </tr>
+        </table>
+    </div>
+    <div>
+        <form action='' method="post">
+            <table>
+                <tr>
+                    <td>Antall: </td>
+                    <td><input type="number" id="antallFeil"/></td>
+                    <td class="inputValederingForInfo" id="antallVal"></td>
+                </tr>
+
+                <tr>
+                    <td>Fornavn: </td>
+                    <td><input type="text" id="fornavnFeil"/></td>
+                    <td id="returnFornavn"></td>
+                </tr>
+                <tr>
+                    <td>Etternavn: </td>
+                    <td><input type="text" id="etternavnFeil"/></td>
+                    <td id="returnEtternavn"></td>
+                </tr>
+                <tr>
+                    <td>Mobilnummer: </td>
+                    <td><input type="number" id="mobFeil"/></td>
+                    <td id="returnMob"></td>
+                </tr>
+                <tr>
+                    <td>Email: </td>
+                    <td><input type="email" id="emailFeil"/></td>
+                    <td id="returnEmail"></td>
+                </tr>
+                <tr>
+                    <td><button  id="buy" onclick="sjekk()">Kjøp</button></td>
+                </tr>
+                <tr>
+                    <td><button id="slettBilett" onclick="clearArray()">Slett alle bilettene</button> </td>
+                </tr>
+            </table>
+        </form>
+        </div>
+        <div id="bilettListe" >
+
+        </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
