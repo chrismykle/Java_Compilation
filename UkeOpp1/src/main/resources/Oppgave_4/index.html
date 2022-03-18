@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+
+</head>
+<body>
+
+<label for="inn">Skriv: </label>
+<input type="text" onchange="innData()" id="inn" />
+<div id="visTekst">...Transmitting...</div>
+
+
+<script type="application/javascript">
+    function innData(){
+        let utskrift = document.getElementById("inn").value;
+        document.getElementById("visTekst").innerText = utskrift;
+        alert(utskrift)
+    }
+</script>
+
+
+</body>
+</html>
